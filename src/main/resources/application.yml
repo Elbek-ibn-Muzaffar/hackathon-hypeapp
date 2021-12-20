@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    #    url: jdbc:postgresql://ec2-44-195-186-235.compute-1.amazonaws.com:5432/d8io75ausm21nl
+    #    username: xjqxqlojopahdf
+    #    password: 8d3f6be2d1c7901ddd1150182ee36f46581d43bf4c11287b0f0ff5e6f45738fb
+    url: jdbc:postgresql://localhost:5432/hackathondb
+    username: juniper
+    password: 112233
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL92Dialect
+    hibernate:
+      ddl-auto: update
